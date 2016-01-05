@@ -1,0 +1,7 @@
+---
+-   hosts: host1
+    remote_user: root
+    tasks:
+        - name: Install httpd package
+          yum: name=httpd state=absent
+          sudo: yes
