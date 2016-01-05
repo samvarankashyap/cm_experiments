@@ -1,0 +1,6 @@
+---
+-   hosts: host1
+    remote_user: root
+    tasks:
+        - name: simple debug script
+          debug: msg={{ ansible_os_family }}
